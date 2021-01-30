@@ -137,6 +137,8 @@
 
             let totalAmount = subtotal + tax;
             document.getElementById('total').innerText = totalAmount;
+
+            return totalAmount;
         }
 
         function getInputValue(ticket){
@@ -146,7 +148,8 @@
 
 
         function bookNow(){
-            alert("Total Amount is : ");
+            var total = totalAmount();
+            alert("Total Amount is : " + total);
         }
     </script>
 </body>
